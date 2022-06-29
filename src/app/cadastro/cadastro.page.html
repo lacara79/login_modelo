@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true" class="centralizarCARD" color="warning">
+
+  <div id="alinhaLogo">
+    <ion-icon id="logo" name="bonfire-outline"></ion-icon>
+  </div>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Novo Contato</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-input placeholder="Nome" [(ngModel)]="nome"></ion-input>
+      <ion-input placeholder="Login" [(ngModel)]="login"></ion-input>
+      <ion-input placeholder="Senha" type="password" [(ngModel)]="senha"></ion-input>
+      <ion-button expand="block" color="warning" (click)="cadastrar()">Cadastrar</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <div id="cadastro">
+    <a routerLink="/home">Cancelar</a>
+  </div>
+</ion-content>
